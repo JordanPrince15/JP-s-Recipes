@@ -3,26 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coffee Artisan Recipes</title>
+  <title>JP's Recipes</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <script src="script.js"></script>
   <header>
-    <h1>Coffee Artisan Recipes</h1>
+    <div class="logo-container">
+        <img src="logo.jpg" alt="Coffee Artisan Logo" class="logo">
+    <h1>Bakers Haven</h1>
+    </div>
     <nav>
       <ul>
-        <li><a href="#recipes">Recipes</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Recipes</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contacts.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="hero">
-    <h2>Discover Coffee-Inspired Culinary Creations</h2>
-    <p>Explore recipes infused with the spirit of coffee artisanship.</p>
-  </section>
+  <!-- the slide content -->
+  <div class="slideshow">
+    <div class="slide" style="background-image: url('banner.jpg');">
+      <div class="slide-content">
+        <h2>Christmas Specials</h2>
+        <p>Enjoy our festive coffee-inspired dishes with exclusive deals this holiday season!</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('banner2.webp');">
+      <div class="slide-content">
+        <h2>Gift Ideas</h2>
+        <p>Find the perfect gifts for your loved ones!</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('banner3.jpg');">
+      <div class="slide-content">
+        <h2>New Year Treats</h2>
+        <p>Start the year with our special recipes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="hero">
+    <h2>Discover Lovely Culinary Creations</h2>
+    <p>Explore recipes infused with the spirit of artisanship.</p>
+  </div>
 
   <section id="recipes">
     <h2>Featured Recipes</h2>
@@ -33,28 +58,32 @@
         <img src="espressocake.webp" alt="Espresso Chocolate Cake">
         <h3>Espresso Chocolate Cake</h3>
         <p>A rich, moist cake with a bold coffee twist.</p>
-        <a href="#">View Recipe</a>
+        <a href="espressocake.html"><button class="view-recipe-btn">View Recipe</button></a>
       </div>
       <!-- Add more recipe cards here -->
+      
       <div class="recipe-card">
-        <h2>Espresso Chocolate Cake</h2>
-        <img src="espressocake.webp" alt="Espresso Chocolate Cake">
-        <h3>Ingredients</h3>
-        <ul>
-            <li>2 cups all-purpose flour</li>
-            <li>1 cup sugar</li>
-            <li>1/2 cup cocoa powder</li>
-            <li>1 shot of espresso</li>
-            <li>...</li>
-        </ul>
-        <h3>Instructions</h3>
-        <p>1. Preheat the oven to 350°F (175°C)...</p>
-        <h3>Coffee Inspiration</h3>
-        <p>This cake uses espresso for a deep coffee flavor...</p>
-        </div>
+        <img src="vanilla-cake.jpeg" alt="Vanilla Cake">
+        <h3>Vanilla Cake</h3>
+        <p>An amazing tasting vanillacake</p>
+        <a href="vanilla-cake.html"><button class="view-recipe-btn">View Recipe</button></a>
+      </div>
+
+      <div class="recipe-card">
+        <img src="Good-old-Fashioned-Pancakes.jpg" alt="Good-old-Fashioned-Pancakes Cake">
+        <h3>Good-old-Fashioned-Pancakes</h3>
+        <p>Just some delicious good old fashioned pancakes</p>
+        <a href="Pancakes.html"><button class="view-recipe-btn">View Recipe</button></a>
+      </div>
     </div>
     
   </section>
+
+  <footer>
+    <p>© 2024 Bakers Haven. All rights reserved.</p>
+  </footer>
+</body>
+</html>
 
   <footer>
     <p>© 2024 Coffee Artisan Recipes. All rights reserved.</p>
