@@ -10,3 +10,16 @@ function filterRecipes() {
       }
     });
   }
+
+// script.js
+let currentSlide = 0;
+
+function showNextSlide() {
+  const slides = document.querySelectorAll('.slide');
+  slides[currentSlide].style.transform = 'translateX(-100%)'; // Move the current slide off-screen
+  currentSlide = (currentSlide + 1) % slides.length; // Update to the next slide
+  slides[currentSlide].style.transform = 'translateX(0)'; // Move the next slide on-screen
+}
+
+// Change slides every 5 seconds
+setInterval(showNextSlide, 5000);
